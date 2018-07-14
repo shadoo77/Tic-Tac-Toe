@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+    <script src="script.js"></script>
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Tic Tac Toe</h2>
+        <h3 id="turnOn"></h3>
+        <div class="board">
+            <div class="row1">
+                <div class="cell" onclick="playGame(1, this)"></div>
+                <div class="cell" onclick="playGame(2, this)"></div>
+                <div class="cell" onclick="playGame(3, this)"></div>
+            </div>
+
+            <div class="row2">
+                <div class="cell" onclick="playGame(4, this)"></div>
+                <div class="cell" onclick="playGame(5, this)"></div>
+                <div class="cell" onclick="playGame(6, this)"></div>
+            </div>
+
+            <div class="row3">
+                <div class="cell" onclick="playGame(7, this)"></div>
+                <div class="cell" onclick="playGame(8, this)"></div>
+                <div class="cell" onclick="playGame(9, this)"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

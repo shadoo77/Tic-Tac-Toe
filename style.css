@@ -1,0 +1,55 @@
+
+@import url(https://fonts.googleapis.com/css?family=Permanent+Marker);
+body {
+    background-color: rgb(124, 156, 116);
+    font-family: 'Permanent Marker', cursive;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+h2 {
+    color: rgb(39, 58, 39);
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+h3 {
+    color: crimson;
+    text-align: center;
+    font-size: 25px;
+}
+.container {
+    width: 100%;
+}
+.board {
+    overflow: hidden;
+    margin: 0 auto;
+}
+.row1, .row2, .row3 {
+    overflow: auto;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+.cell {
+    width: calc(100% / 3);
+    height: 100px;
+    float: left;
+    border: 3px solid rgb(65, 65, 65);
+    font-size: 60px;
+    color: rgb(38, 2, 71);
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    vertical-align: -webkit-baseline-middle;
+}
+.row1 .cell {border-top: none;}
+.row3 .cell {border-bottom: none;}
+.cell:nth-child(1) {border-left: none;}
+.cell:nth-child(3) {border-right: none;}
+@media only screen and (min-width:350px) {
+    .cell {
+        width: 100px;
+    }
+}
